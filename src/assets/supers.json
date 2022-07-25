@@ -2,7 +2,7 @@
     {"id": 1,
     "name": "SuperMan",
     "image": "./../../../assets/images/superman.jpeg",
-    "detalle": "El hombre que fue mordido por una araña",
+    "detalle": "texto texto texto",
     "like": 64,
     "dislike": 36},
 

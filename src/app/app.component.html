@@ -11,11 +11,11 @@
 
 
     <!--Inicio Votacion-->
-    <div *ngFor="let super of ArregloHeroes; last as isLast">
+    <div *ngFor="let super of ArregloSupers; last as isLast">
       <div *ngIf="isLast">
         <div style="background-image: url({{super.image}}); background-size: cover;">
           
-          <div *ngIf="!Votado">
+          <div *ngIf="!voto">
             <div>
               <div class="card text-white p-5 selectVoto">
                 <div class="card-body">
@@ -37,11 +37,11 @@
             </div>
           </div>
           
-          <div *ngIf="Votado">
+          <div *ngIf="voto">
             <div style="background-color: rgba(0, 0, 0, 0.2);">
               <div class="card text-white p-5 selectVoto">
                 <div class="card-body">
-                  <ng-container *ngIf="Gusto; else disl">
+                  <ng-container *ngIf="registro; else disl">
                     <div class="likeV mr-2">
                       <img class="navbar-brand mx-2" src="../assets/images/like.png" width="25px" height="35px">
                     </div>
@@ -122,9 +122,9 @@
               <button class="buttonStyle"> Ver detalle </button>
             </div>
           </div>
-          <div class="likes">
-            <div  style="height: 20px; background-color: rgb(110, 215, 204);  width: {{((super.like * 100)/(super.like+super.dislike)).toFixed()}}%">{{super.like}}%</div>
-            <div  style="height: 20px; background-color: rgb(212, 163, 27); width: {{ ((super.dislike * 100)/(super.like+super.dislike)).toFixed() }}%">{{super.dislike}}%</div>
+          <div class="Union">
+            <div class="bueno abs-center " width="64%">{{super.like}}%</div>
+            <div class="abs-center " style="height: 20px; background-color: rgb(212, 163, 27); width: 36%">{{super.dislike}}%</div>
           </div>
         </div>
       </div>

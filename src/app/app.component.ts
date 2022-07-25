@@ -8,40 +8,38 @@ import {SuperService } from 'src/assets/http/super.service';
 })
 export class AppComponent implements OnInit{
   title = 'Prueba-Tecnica';
-  ArregloHeroes: any;
-  Votado = false;
-  Gusto = true;
+  ArregloSupers: any;
+  voto = false;
+  registro = true;
+  guardar = 0;
+
 
 
  
 
   constructor(private Heroes: SuperService){
-    this.Heroes.getHeroes().subscribe((heroes: any) => {
-      this.ArregloHeroes = heroes;
-      console.log(heroes)
+    this.Heroes.getHeroes().subscribe((supers: any) => {
+      this.ArregloSupers = supers;
     });
   };
-
   ngOnInit(){
 
   }
 
-  like(Hero: number){
-    console.log(Hero)
-    this.ArregloHeroes[Hero-1].like = this.ArregloHeroes[Hero-1].like + 1;
-    this.Votado = true;
-    this.Gusto = true;
+  like(Super: number){
+    this.ArregloSupers[Super-1].like = this.ArregloSupers[Super-1].like + 1;
+    this.voto = true;
+    this.registro = true;
   }
 
-  dislike(Hero: number){
-    console.log(Hero)
-    this.ArregloHeroes[Hero-1].dislike = this.ArregloHeroes[Hero-1].dislike + 1;
-    this.Votado = true;
-    this.Gusto = false;
+  dislike(Super: number){
+    this.ArregloSupers[Super-1].dislike = this.ArregloSupers[Super-1].dislike + 1;
+    this.voto = true;
+    this.registro = false;
   }
 
   votarDenuevo(){
-    this.Votado = false;
+    this.voto = false;
   }
 
 
@@ -50,7 +48,7 @@ export class AppComponent implements OnInit{
     {id: 1,
     name: 'SuperMan',
     image: './../../../assets/images/superman.jpeg',
-    detalle: ' El hombre que fue mordido por una araña',
+    detalle: 'texto texto texto',
     like: 64,
     dislike: 36},
 
