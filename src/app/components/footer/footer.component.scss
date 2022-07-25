@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}   
+
+.enlace{
+    font-size: small;
+    font-weight: 600;
+    color: #b3b3b3;
+    font-family: 'Roboto';
+}
+
+.line{
+    color: black;
+    height: 0px;
+    border: 1px dashed black;
+}
+

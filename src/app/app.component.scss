@@ -1,0 +1,144 @@
+.Fuente{
+    font-family: 'Roboto';
+}
+
+.abs-center {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bueno{
+    height: 20px; 
+    background-color: rgb(110, 215, 204); 
+    width: 64%;
+}
+
+
+.Home{
+    position: relative;
+}
+
+.titulo1{
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.titulo2{
+    font-family: 'Roboto';
+    font-size: x-large;
+}
+
+.titulo3{
+    font-family: 'Roboto';
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.texto{
+    font-family: 'Roboto';
+    font-size: x-large;
+    font-size: small;
+}
+
+
+
+.opacidad{
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: flex-end;
+}
+
+.bodyCards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.detalleCard{
+    font-family: 'Roboto';
+    font-size: medium;
+}
+
+.buttonStyle{
+    background-color: rgba(0, 0, 0, 0);
+    font-family:'Roboto';
+    font-size: small;
+    font-weight: 700;
+    color: white;
+    border-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.like{
+    background-color: rgb(110, 215, 204);
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: 95px;
+    margin-right: 10px;
+}
+
+.dislike{
+    background-color: rgb(212, 163, 27);
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: 95px;
+    margin-right: 10px;
+}
+
+.likeV{
+    background-color: rgb(110, 215, 204);
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.dislikeV{
+    background-color: rgb(212, 163, 27);
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.Union{
+    display: flex;
+    width: 100%; 
+    border: 0px solid black; 
+    padding: 1px;
+}
+
+.selectVoto{
+    max-width: 25rem;
+    height: 400px; 
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+@media( max-width: 560px){
+    .opacidad{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .like{
+        margin-bottom: 5px;
+    }
+
+    .dislike{
+        margin-bottom: 5px;
+    }
+
+    .Union{
+        width: 100%;
+    }
+
+    .cartaVoto{
+        max-width: 100%;
+    }
+}
