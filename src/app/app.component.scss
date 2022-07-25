@@ -39,6 +39,9 @@
     font-family: 'Roboto';
     font-size: x-large;
     font-size: small;
+    display: grid;
+    
+    
 }
 
 
@@ -106,18 +109,6 @@
     margin-right: 10px;
 }
 
-.resultado{
-    display: flex;
-    width: 100%; 
-    border: 0px solid black; 
-    padding: 1px;
-}
-
-.selectVoto{
-    max-width: 25rem;
-    height: 400px; 
-    background-color: rgba(0, 0, 0, 0.72);
-}
 
 @media( max-width: 560px){
     .opacidad{
@@ -142,3 +133,18 @@
         max-width: 100%;
     }
 }
+
+
+.resultado{
+    display: flex;
+    width: 100%; 
+    border: 0px solid black; 
+    padding: 1px;
+}
+
+.selectVoto{
+    max-width: 25rem;
+    height: 400px; 
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
